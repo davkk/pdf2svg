@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pdf2svg"
+version = "0.1.0"
+description = ""
+authors = ["Dawid Karp <dadulerk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.3.2"
+shortuuid = "^1.0.1"
+svgutils = "^0.3.4"
+PyPDF2 = "^1.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.8.4"
+rope = "^0.18.0"
+mypy = "^0.812"
+black = "^20.8b1"
+autopep8 = "^1.5.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pdf2svg = "pdf2svg.cli:app"
